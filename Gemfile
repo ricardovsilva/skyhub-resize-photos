@@ -2,7 +2,7 @@ source 'https://rubygems.org' do
 
   gem "rest-client"
   gem "sinatra"
-  gem "fastimage_resize"
   gem "byebug"
-
+  gem "down"
+  gem "image_proc"
 end

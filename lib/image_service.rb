@@ -15,7 +15,7 @@ class ImageService
   def download_images_to(file_saver)
     images_path = get_images_urls
     images_path.each do |image_path|
-      file_saver.save  
+      file_saver.save
     end
   end
 end

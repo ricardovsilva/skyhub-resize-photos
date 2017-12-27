@@ -8,7 +8,7 @@ class ImageServiceTests < Test::Unit::TestCase
   end
 
   def test_get_images_urls__service_returns_json_with_10_urls__should_return_10_urls
-    actual = @imageService.get_images_path
+    actual = @imageService.get_images_urls
     assert_equal(10, actual.length)
   end
 end
