@@ -2,6 +2,7 @@ class FileDownloader
   def initialize(save_path, downloader, filters = [])
     raise if not save_path
     @save_path = save_path
+    Dir.mkdir(save_path) unless Dir.exist?(save_path)
     @downloader = downloader
     @filters = filters
   end
