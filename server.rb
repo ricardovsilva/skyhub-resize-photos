@@ -12,7 +12,7 @@ IMAGES_OUTPUT_PATH = File.join(File.dirname(__FILE__), "/images/")
 # Cache configuration - If you don't want to use cache, comment cache configuration section below
 MONGO_URL = 'localhost:27017'
 CACHE_DB_NAME = 'image-resizer'
-CACHE_SERVICE = MongoCacheService.new(mongo_url: MONGO_URL, database_name: CACHE_DB_NAME, expiration_seconds: 10)
+CACHE_SERVICE = MongoCacheService.new(mongo_url: MONGO_URL, database_name: CACHE_DB_NAME, expiration_seconds: 7200)
 IMAGES_COLLECTION_NAME = 'images'
 # END of cache configuration
 
