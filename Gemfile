@@ -5,4 +5,5 @@ source 'https://rubygems.org' do
   gem "byebug"
   gem "down"
   gem "image_proc"
+  gem "mongo"
 end
