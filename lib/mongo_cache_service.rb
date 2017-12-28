@@ -13,7 +13,7 @@ class MongoCacheService
   end
 
   def add(object, collection_name)
-    @client[collection_name].indexes.create_one({:created_at => 1}, {:expire_after => @expiration_seconds})
+    @client[collection_name].indexes.create_one({created_at: 1}, {expire_after: @expiration_seconds})
     @client[collection_name].insert_one({ data: object, created_at: DateTime.now })
   end
 end
