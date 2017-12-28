@@ -6,4 +6,5 @@ source 'https://rubygems.org' do
   gem "image_proc"
   gem "mongo"
   gem "rake"
+  gem "test-unit"
 end
