@@ -1,23 +1,19 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    RubyInline (3.12.4)
-      ZenTest (~> 4.3)
-    ZenTest (4.11.1)
+    bson (4.2.2)
     byebug (9.1.0)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     down (4.2.0)
-    fastimage (2.1.1)
-    fastimage_resize (2.0.3)
-      RubyInline (>= 3.8.2)
-      fastimage (>= 1.2.9)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     image_proc (2.1.1)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
+    mongo (2.4.3)
+      bson (>= 4.2.1, < 5.0.0)
     mustermann (1.0.1)
     netrc (0.11.0)
     rack (2.0.3)
@@ -43,8 +39,8 @@ PLATFORMS
 DEPENDENCIES
   byebug!
   down!
-  fastimage_resize!
   image_proc!
+  mongo!
   rest-client!
   sinatra!
 

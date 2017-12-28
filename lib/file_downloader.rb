@@ -12,11 +12,11 @@ class FileDownloader
 
   def save(file_url)
     download_path = @downloader.download(file_url)
-    File.open download_path, "rb" do |io|
-      file_name = file_url.split('/').last
-      output_file_path = File.join(@save_path, file_name)
-      File.open(output_file_path, 'wb') { |file| file.write(io.read) }
+    file_name = file_url.split('/').last
+    output_file_path = File.join(@save_path, file_name)
 
+    File.open download_path, "rb" do |io|
+      File.open(output_file_path, 'wb') { |file| file.write(io.read) }
       outputs = [output_file_path]
       @filters.each { |filter| outputs.push(filter.apply(output_file_path)) } if @filters
 
